@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: a5519874836741268175be29cfb0e4e1
+timeCreated: 1632299587
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/Common/Utilities/Helpers/NavAreaValue.cs
+  uploadId: 637277

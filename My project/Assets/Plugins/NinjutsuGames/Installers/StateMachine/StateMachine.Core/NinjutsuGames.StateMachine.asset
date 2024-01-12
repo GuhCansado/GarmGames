@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734bdb5c6ff542a7a94b0aec1b2782c, type: 3}
+  m_Name: NinjutsuGames.StateMachine
+  m_EditorClassIdentifier: 
+  m_Install:
+    m_Name: Core
+    m_Module: State Machine
+    m_Description: 'This module allows to create state machines with Game Creator
+      2.
+
+      Keep things clean and organize your triggers, actions and conditions
+      in a simple State Machine, easily re-use them with any type of game object.
+
+
+      FEATURES
+
+
+      -
+      Node-Based Graph with amazing performance.
+
+      - Multiple types of Nodes
+      (Triggers, Actions, Branch, Conditions, Sub-StateMachine)
+
+      - Re-use State
+      Machines for any type of logic Game Modes, AI, Player Managers etc.
+
+      -
+      Variables from all types for State Machine asset and Runner.
+
+      - Disable
+      or Lock nodes
+
+      - MiniMap to easily navigate through the graph
+
+      -
+      Group nodes
+
+      - Add Sticky Notes
+
+      - Easily Align Nodes
+
+      -
+      Tons of Shortcuts
+
+      - Complete undo support
+
+      - Copy & Paste nodes
+      between State Machines.
+
+      - Drag & Drop regular GC Actions, Conditions
+      and Triggers to a StateMachine to easily port your previous work.
+
+      -
+      Duplicate State Machines.
+
+      - Add as many Sub-State Machines as you need.
+
+      -
+      Drag & Drop state machines inside other SM''s to create Sub-State Machines.
+
+      -Easily
+      export State Machines to share between projects or to other users.
+
+      -
+      Use any type of triggers, actions and conditions inside a State Machine.
+
+      -
+      Works with any other official or un-official Game Creator modules.
+
+      -
+      Live Debug runtime states right in the Editor
+
+      - Compatible with all
+      modules.'
+    m_Author: Ninjutsu Games
+    m_Version:
+      major: 1
+      minor: 2
+      patch: 4
+    m_Complexity: 2
+    m_Dependencies: []

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48ac02dbba742f98187f59ea72c9222, type: 3}
+  m_Name: photon.general
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 137905436776726589
+  references:
+    version: 2
+    RefIds:
+    - rid: 137905436776726589
+      type: {class: PhotonRepository, ns: NinjutsuGames.Photon.Runtime, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        settings:
+          monobehaviourCache: 0
+          sendRate: 30
+          sendRateOnSerialize: 10
+          unreliableCommandsLimit: 10
+          updatePing: 1
+          updatePingEvery: 2
+          switchMasterClient: 1
+          lagCheck: 3
+          lagThreshold: 1000
+          switchMasterErrors: 5
+          defaultName: Player

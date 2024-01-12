@@ -1,0 +1,874 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8571242581215828770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9174328499848344323}
+  - component: {fileID: 6481481276006220726}
+  m_Layer: 0
+  m_Name: OnPlayerProperties
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9174328499848344323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571242581215828770}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5500272614627430557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6481481276006220726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571242581215828770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions: []
+  m_TriggerEvent:
+    rid: 5685986053637013509
+  references:
+    version: 2
+    RefIds:
+    - rid: 5685986053637013509
+      type: {class: EventPhotonPlayerPropertiesUpdate, ns: NinjutsuGames.Photon.Runtime, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        targetPlayer:
+          m_Property:
+            rid: 5685986053637013516
+        setVariables:
+          nameVariable: 0
+          localNameVariables: {fileID: 0}
+          globalNameVariables: {fileID: 0}
+    - rid: 5685986053637013516
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 6950608643598484232}
+--- !u!1 &8595494237887266923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3018363076417943527}
+  - component: {fileID: 6943682960642117093}
+  m_Layer: 0
+  m_Name: Trigger_PhotonInstantiate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3018363076417943527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595494237887266923}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5500272614627430557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6943682960642117093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595494237887266923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 5321051600400678973
+    - rid: 8434368462869496183
+    - rid: 8434368462869496627
+  m_TriggerEvent:
+    rid: 5321051600400678972
+  references:
+    version: 2
+    RefIds:
+    - rid: 5321051600400678972
+      type: {class: EventPhotonInstantiate, ns: NinjutsuGames.Photon.Runtime, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        instantiationData:
+          nameVariable: 0
+          localNameVariables: {fileID: 0}
+          globalNameVariables: {fileID: 0}
+    - rid: 5321051600400678973
+      type: {class: InstructionAddFloatingText, ns: NinjutsuGames.Photon.Runtime.VisualScripting, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        target:
+          m_Property:
+            rid: 5321051631990603916
+        text:
+          m_Property:
+            rid: 5321051600400678976
+        settings:
+          prefab: {fileID: 1027631751396875296, guid: eac471c8f2d6e4a53b0d85ed33f6fee6, type: 3}
+          offset: {x: 0, y: 0.8, z: 0}
+          duration: 0
+          color: {r: 1, g: 1, b: 1, a: 1}
+          fadeOutTime: 0.5
+    - rid: 5321051600400678976
+      type: {class: GetStringPhotonPlayerName, ns: NinjutsuGames.Photon.Runtime.Common, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        player:
+          m_Property:
+            rid: 5321051600400678978
+    - rid: 5321051600400678978
+      type: {class: GetGameObjectCharactersInstance, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character: {fileID: 3941907541905721446}
+    - rid: 5321051631990603916
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 8434368462869496183
+      type: {class: InstructionLogicCheckConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Conditions:
+          m_Conditions:
+          - rid: 8434368462869496184
+    - rid: 8434368462869496184
+      type: {class: ConditionPhotonIsMine, ns: NinjutsuGames.Photon.Runtime.VisualScripting, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        target:
+          m_Property:
+            rid: 8434368462869496185
+        compareTo:
+          m_Comparison: 0
+          m_CompareTo:
+            m_Property:
+              rid: 8434368462869496186
+    - rid: 8434368462869496185
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 6950608643598484232}
+    - rid: 8434368462869496186
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 8434368462869496627
+      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 8434368462869496628
+        m_Active:
+          m_Property:
+            rid: 8434368462869496629
+    - rid: 8434368462869496628
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 2443957888969732278}
+    - rid: 8434368462869496629
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+--- !u!1001 &1318831554948148517
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581471]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581472]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581473]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581474]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581475]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581476]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581477]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160858].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160859].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160860].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160869].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160898].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291953].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291955].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291956].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291957].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291971].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291973].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160860].m_Character.m_Property
+      value: 28847165398581474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160869].m_Character.m_Property
+      value: 28847165398581472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160898].m_Character.m_Property
+      value: 28847165398581471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291953].m_Character.m_Property
+      value: 28847165398581473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291956].m_Character.m_Property
+      value: 28847165398581475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291957].m_Character.m_Property
+      value: 28847165398581476
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715485637795019, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[6638674246121291973].m_Character.m_Property
+      value: 28847165398581477
+      objectReference: {fileID: 0}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438523]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438576]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438523].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438576].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769837892286].m_Character.m_Property
+      value: 7906947851528438576
+      objectReference: {fileID: 0}
+    - target: {fileID: 463732106518550034, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760182].m_Character.m_Property
+      value: 7906947851528438523
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377629242429248579, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581468]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377629242429248579, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581469]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377629242429248579, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160850].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377629242429248579, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160847].m_Character.m_Property
+      value: 28847165398581468
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377629242429248579, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160850].m_Character.m_Property
+      value: 28847165398581469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417933412482531073, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581470]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417933412482531073, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160854].m_Character.m_Property
+      value: 28847165398581470
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438015]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438042]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438069]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438096]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438123]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438150]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760741].m_Character.m_Property
+      value: 7906947851528438015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760763].m_Character.m_Property
+      value: 7906947851528438042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930051].m_Character.m_Property
+      value: 7906947851528438096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930178].m_Character.m_Property
+      value: 7906947851528438069
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930281].m_Character.m_Property
+      value: 7906947851528438123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625716890128665796, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930282].m_Character.m_Property
+      value: 7906947851528438150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866773711714259060, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581466]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866773711714259060, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581467]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866773711714259060, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735540352868155416].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866773711714259060, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160841].m_Character.m_Property
+      value: 28847165398581466
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866773711714259060, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735540352868155416].m_Character.m_Property
+      value: 28847165398581467
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581460]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581461]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581462]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738759].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160876].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160904].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160905].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738759].m_Character.m_Property
+      value: 28847165398581461
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160876].m_Character.m_Property
+      value: 28847165398581462
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289113021649957026, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160905].m_Character.m_Property
+      value: 28847165398581460
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664185161582372163, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_IsPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701068993677157636, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_IsPlayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701068993677157636, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160833].m_Jump.m_AirJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701068993677157636, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160833].m_Acceleration.m_Acceleration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701068993677157636, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160833].m_Acceleration.m_Deceleration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438417]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438470]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438417].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438470].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769837892480].m_Character.m_Property
+      value: 7906947851528438470
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037828637179937522, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760336].m_Character.m_Property
+      value: 7906947851528438417
+      objectReference: {fileID: 0}
+    - target: {fileID: 3850212378834402357, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438177]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3850212378834402357, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438177].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 3850212378834402357, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760575].m_Character.m_Property
+      value: 7906947851528438177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581437]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581438]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581439]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[2531411151074361368].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738756].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160905].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[2531411151074361368].m_Character.m_Property
+      value: 28847165398581439
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738756].m_Character.m_Property
+      value: 28847165398581438
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209891870312835023, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539769207160905].m_Character.m_Property
+      value: 28847165398581437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390634298435548171, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438337]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390634298435548171, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438364]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390634298435548171, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438337].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 4390634298435548171, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930662].m_Character.m_Property
+      value: 7906947851528438337
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390634298435548171, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930686].m_Character.m_Property
+      value: 7906947851528438364
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581463]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581464]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581465]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4505834252451184651].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4505834252451184654].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539992345182264].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539999292522505].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539999292522509].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4505834252451184651].m_Character.m_Property
+      value: 28847165398581464
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4505834252451184654].m_Character.m_Property
+      value: 28847165398581463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784298385919399504, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735539999292522505].m_Character.m_Property
+      value: 28847165398581465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438230]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438257]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528438284]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528438284].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930551].m_Character.m_Property
+      value: 7906947851528438284
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088328398387014303, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232770140930574].m_Character.m_Property
+      value: 7906947851528438230
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289743268377336459, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_Name
+      value: Player_Photon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289743268377336459, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814261955538280245, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581478]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814261955538280245, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735540360440446980].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814261955538280245, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5735540360440446977].m_Character.m_Property
+      value: 28847165398581478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884449991618638791, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[7906947851528437962]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884449991618638791, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[7906947851528437962].m_Character
+      value: 
+      objectReference: {fileID: 3941907541905721446}
+    - target: {fileID: 6884449991618638791, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[5243232769980760066].m_Character.m_Property
+      value: 7906947851528437962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380151076527158935, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581458]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: 'managedReferences[28847165398581459]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738763].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738766].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738763].m_Character.m_Property
+      value: 28847165398581458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163411015668231101, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: managedReferences[4167977578209738766].m_Character.m_Property
+      value: 28847165398581459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230587750230797869, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      propertyPath: m_Name
+      value: Player_Photon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6780603008925302200, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3018363076417943527}
+    - targetCorrespondingSourceObject: {fileID: 6780603008925302200, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9174328499848344323}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8230587750230797869, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5737751771991442450}
+    - targetCorrespondingSourceObject: {fileID: 8230587750230797869, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 545321475235264465}
+    - targetCorrespondingSourceObject: {fileID: 8230587750230797869, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3387324714444128551}
+  m_SourcePrefab: {fileID: 100100000, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+--- !u!1 &2443957888969732278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3722155339962867091, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+  m_PrefabInstance: {fileID: 1318831554948148517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3941907541905721446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2664185161582372163, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+  m_PrefabInstance: {fileID: 1318831554948148517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950608643598484232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4aa7a58d404413af1c9111cdcd3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &5500272614627430557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6780603008925302200, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+  m_PrefabInstance: {fileID: 1318831554948148517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6950608643598484232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8230587750230797869, guid: c9d3f027132904e4b86bd8b47491e3b5, type: 3}
+  m_PrefabInstance: {fileID: 1318831554948148517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5737751771991442450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950608643598484232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 545321475235264465}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &545321475235264465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950608643598484232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4dd1195ccdc4bc3acac4e439fe25d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTime: 0.25
+  teleportIfDistance: 5
+--- !u!114 &3387324714444128551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950608643598484232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe2b16044a04efba6795e323236dc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SaveUniqueID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: player-variables
+  m_Runtime:
+    rid: 7906947851528437858
+  references:
+    version: 2
+    RefIds:
+    - rid: 7906947851528437858
+      type: {class: NameVariableRuntime, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_List:
+          rid: 7906947851528437859
+    - rid: 7906947851528437859
+      type: {class: NameList, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Source: []

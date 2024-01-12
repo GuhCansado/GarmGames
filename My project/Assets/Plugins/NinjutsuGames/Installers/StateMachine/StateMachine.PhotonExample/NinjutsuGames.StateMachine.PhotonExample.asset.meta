@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a533a53cbf9b34e00ba43e4024729943
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250058
+  packageName: State Machine 2 (Game Creator 2)
+  packageVersion: 1.2.4
+  assetPath: Assets/Plugins/NinjutsuGames/Installers/StateMachine/StateMachine.PhotonExample/NinjutsuGames.StateMachine.PhotonExample.asset
+  uploadId: 627816

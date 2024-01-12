@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8dd6cde3f9d444d5bbf0ff5582e954bb
+timeCreated: 1643126067
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Instructions/Collection/Cameras/Shots/InstructionShotOrbitMaxRadius.cs
+  uploadId: 637277

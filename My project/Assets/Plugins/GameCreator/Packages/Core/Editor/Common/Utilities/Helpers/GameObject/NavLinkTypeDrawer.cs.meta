@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: a511a3751a574327891404c248238932
+timeCreated: 1632304977
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Editor/Common/Utilities/Helpers/GameObject/NavLinkTypeDrawer.cs
+  uploadId: 637277

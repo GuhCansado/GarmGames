@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1daa5030df414cbe8b1b9273380d827c
+timeCreated: 1643126585
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Instructions/Collection/Cameras/Shots/InstructionShotOrbitSmoothTime.cs
+  uploadId: 637277

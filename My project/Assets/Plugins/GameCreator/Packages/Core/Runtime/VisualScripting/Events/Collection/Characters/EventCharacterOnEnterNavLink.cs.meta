@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 36594e0fbe7a44588080300b82ae7d7a
+timeCreated: 1632304091
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Events/Collection/Characters/EventCharacterOnEnterNavLink.cs
+  uploadId: 637277

@@ -1,0 +1,646 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5994496476295703021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7740630437122333104}
+  - component: {fileID: 2373638115200446072}
+  - component: {fileID: 2579995046613891907}
+  m_Layer: 0
+  m_Name: Trigger_PhotonInstantiate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7740630437122333104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994496476295703021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6955386758920541729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2373638115200446072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994496476295703021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 5321051600400678973
+    - rid: 8474150838167666892
+    - rid: 8434368462869495983
+    - rid: 8434368462869496407
+  m_TriggerEvent:
+    rid: 5321051600400678972
+  references:
+    version: 2
+    RefIds:
+    - rid: 5321051600400678972
+      type: {class: EventPhotonInstantiate, ns: NinjutsuGames.Photon.Runtime, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        instantiationData:
+          nameVariable: 0
+          localNameVariables: {fileID: 2579995046613891907}
+          globalNameVariables: {fileID: 0}
+    - rid: 5321051600400678973
+      type: {class: InstructionAddFloatingText, ns: NinjutsuGames.Photon.Runtime.VisualScripting, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        target:
+          m_Property:
+            rid: 5321051631990603916
+        text:
+          m_Property:
+            rid: 5321051600400678976
+        settings:
+          prefab: {fileID: 1027631751396875296, guid: eac471c8f2d6e4a53b0d85ed33f6fee6, type: 3}
+          offset: {x: 0, y: 1, z: 0}
+          duration: 0
+          color: {r: 1, g: 1, b: 1, a: 1}
+          fadeOutTime: 0.5
+    - rid: 5321051600400678976
+      type: {class: GetStringPhotonPlayerName, ns: NinjutsuGames.Photon.Runtime.Common, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        player:
+          m_Property:
+            rid: 5321051600400678978
+    - rid: 5321051600400678978
+      type: {class: GetGameObjectCharactersInstance, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character: {fileID: 1902458224359902938}
+    - rid: 5321051631990603916
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 8434368462869495983
+      type: {class: InstructionLogicCheckConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Conditions:
+          m_Conditions:
+          - rid: 8434368462869496040
+    - rid: 8434368462869496040
+      type: {class: ConditionPhotonIsMine, ns: NinjutsuGames.Photon.Runtime.VisualScripting, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        target:
+          m_Property:
+            rid: 8434368462869496041
+        compareTo:
+          m_Comparison: 0
+          m_CompareTo:
+            m_Property:
+              rid: 8434368462869496042
+    - rid: 8434368462869496041
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5523416550317868468}
+    - rid: 8434368462869496042
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 8434368462869496407
+      type: {class: InstructionGameObjectSetActive, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 8434368462869496408
+        m_Active:
+          m_Property:
+            rid: 8434368462869496409
+    - rid: 8434368462869496408
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 952570052858263050}
+    - rid: 8434368462869496409
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 8474150838167666892
+      type: {class: InstructionCharacterChangeModel, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 8474150838167666895
+        m_Model:
+          m_Property:
+            rid: 8474150838167666896
+        m_MaterialSounds: {fileID: 0}
+        m_Offset: {x: 0, y: 0, z: 0}
+    - rid: 8474150838167666895
+      type: {class: GetGameObjectCharactersInstance, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character: {fileID: 1902458224359902938}
+    - rid: 8474150838167666896
+      type: {class: GetGameObjectRuntimeModelsListByName, ns: NinjutsuGames.Photon.Runtime.Common, asm: NinjutsuGames.Photon.Runtime}
+      data:
+        m_ModelName:
+          m_Property:
+            rid: 8474150838167666898
+    - rid: 8474150838167666898
+      type: {class: GetStringLocalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: string
+          m_Variable:
+            rid: 8474150838167666899
+          m_Name:
+            m_String: model
+            m_ID: -678071591
+    - rid: 8474150838167666899
+      type: {class: PropertyGetGameObject, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Property:
+          rid: 8474150838167666900
+    - rid: 8474150838167666900
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5994496476295703021}
+--- !u!114 &2579995046613891907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994496476295703021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe2b16044a04efba6795e323236dc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SaveUniqueID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: 93a3d5fc-f56c-4cdd-b90d-dbe12f6669a5
+  m_Runtime:
+    rid: 7906947851528438758
+  references:
+    version: 2
+    RefIds:
+    - rid: 7906947851528438758
+      type: {class: NameVariableRuntime, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_List:
+          rid: 7906947851528438759
+    - rid: 7906947851528438759
+      type: {class: NameList, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Source:
+        - rid: 7906947947117412412
+    - rid: 7906947947117412412
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 7906947947117412442
+        m_Name:
+          m_String: model
+    - rid: 7906947947117412442
+      type: {class: ValueString, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 
+--- !u!1001 &3229815040752699068
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2753417977351315922, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860135314797049899, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: smoothTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051543707058209]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.VisualScripting.InstructionCharacterChangeModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051543707058210]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051543707058211]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051543707058212]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_Instructions.m_Instructions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'm_Instructions.m_Instructions.Array.data[1]'
+      value: 5321051543707058209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Offset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Skeleton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_IsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058212].m_Character
+      value: 
+      objectReference: {fileID: 1800037821358342507, guid: dc16b67bab5dd43319e06eb6d726c9cd, type: 3}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Breakpoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_IsExpanded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058211].m_GameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5685986003591364680].m_IsExpanded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_MaterialSounds
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Model.m_Property
+      value: 5321051543707058211
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051543707058209].m_Character.m_Property
+      value: 5321051543707058212
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446606695471107179, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[4307091684776476711].instantiationData.localNameVariables
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481481276006220726, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5685986053637013509].setVariables.localNameVariables
+      value: 
+      objectReference: {fileID: 2579995046613891907}
+    - target: {fileID: 6567830686938937262, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_Name
+      value: Player_CharacterSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778008490590640600, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[-2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051631990604002]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.VisualScripting.InstructionCharacterChangeModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051631990604003]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051631990604005]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Variables.GetStringLocalName
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051680258129992]'
+      value: NinjutsuGames.Photon.Runtime NinjutsuGames.Photon.Runtime.Common.GetGameObjectRuntimeModelsListByName
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051680258129993]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetStringString
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051680258129994]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Variables.GetStringLocalName
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994465]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.VisualScripting.InstructionCharacterChangeModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994466]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994467]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetGameObjectInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994468]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Characters.GetGameObjectCharactersInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994469]'
+      value: NinjutsuGames.Photon.Runtime NinjutsuGames.Photon.Runtime.Common.GetGameObjectRuntimeModelsListByName
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994470]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Common.GetStringString
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'managedReferences[5321051699806994471]'
+      value: GameCreator.Runtime.Core GameCreator.Runtime.Variables.GetStringLocalName
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_Instructions.m_Instructions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'm_Instructions.m_Instructions.Array.data[0]'
+      value: 5321051699806994465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'm_Instructions.m_Instructions.Array.data[1]'
+      value: 5321051600400678973
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: 'm_Instructions.m_Instructions.Array.data[2]'
+      value: 5321051600400678973
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051680258129993].m_Value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994470].m_Value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Offset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Skeleton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Offset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Skeleton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_IsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_IsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051600400678973].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Breakpoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Breakpoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_IsExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994467].m_GameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_MaterialSounds
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_MaterialSounds
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051600400678973].settings.offset.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Model.m_Property
+      value: 5321051680258129992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Model.m_Property
+      value: 5321051699806994469
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994471].m_Variable.m_Variable
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604002].m_Character.m_Property
+      value: 5321051631990604003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604005].m_Variable.m_Name.m_ID
+      value: -678071591
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051680258129992].m_ModelName.m_Property
+      value: 5321051680258129994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051680258129994].m_Variable.m_Name.m_ID
+      value: -678071591
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994465].m_Character.m_Property
+      value: 5321051699806994468
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994469].m_ModelName.m_Property
+      value: 5321051699806994471
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994471].m_Variable.m_Name.m_ID
+      value: -678071591
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604005].m_Variable.m_Name.m_String
+      value: model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051680258129994].m_Variable.m_Name.m_String
+      value: model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994471].m_Variable.m_Name.m_String
+      value: model
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051631990604005].m_Variable.m_TypeID.m_String
+      value: string
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051680258129994].m_Variable.m_TypeID.m_String
+      value: string
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943682960642117093, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5321051699806994471].m_Variable.m_TypeID.m_String
+      value: string
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950608643598484232, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_Name
+      value: Player_CharacterSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369656244849122226, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8595494237887266923, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5500272614627430557, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7740630437122333104}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+--- !u!1 &952570052858263050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2443957888969732278, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+  m_PrefabInstance: {fileID: 3229815040752699068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1902458224359902938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3941907541905721446, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+  m_PrefabInstance: {fileID: 3229815040752699068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523416550317868468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4aa7a58d404413af1c9111cdcd3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5523416550317868468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6950608643598484232, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+  m_PrefabInstance: {fileID: 3229815040752699068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6955386758920541729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500272614627430557, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+  m_PrefabInstance: {fileID: 3229815040752699068}
+  m_PrefabAsset: {fileID: 0}

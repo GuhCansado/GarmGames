@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 59f8eaea284f48f5b1446ff2a9aa3f99
+timeCreated: 1632296288
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Events/Collection/Characters/TEventCharacterNavLink.cs
+  uploadId: 637277

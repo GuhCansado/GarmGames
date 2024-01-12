@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ae7897294a01487dacd0aff709b57141
+timeCreated: 1643125734
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Instructions/Collection/Cameras/Shots/InstructionShotOrbitOffset.cs
+  uploadId: 637277

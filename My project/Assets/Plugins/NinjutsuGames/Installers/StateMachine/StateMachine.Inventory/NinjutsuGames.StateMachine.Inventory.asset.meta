@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff732664d3c364a2a9a6f0a6ed9d9fa0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250058
+  packageName: State Machine 2 (Game Creator 2)
+  packageVersion: 1.2.4
+  assetPath: Assets/Plugins/NinjutsuGames/Installers/StateMachine/StateMachine.Inventory/NinjutsuGames.StateMachine.Inventory.asset
+  uploadId: 627816

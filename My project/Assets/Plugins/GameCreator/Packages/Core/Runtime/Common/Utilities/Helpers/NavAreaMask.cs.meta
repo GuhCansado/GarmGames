@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 15bdba94d62648b1bd13c0ebb7da7326
+timeCreated: 1632300235
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/Common/Utilities/Helpers/NavAreaMask.cs
+  uploadId: 637277

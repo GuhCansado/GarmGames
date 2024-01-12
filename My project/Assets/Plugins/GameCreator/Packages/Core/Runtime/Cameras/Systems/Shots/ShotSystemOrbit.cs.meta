@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: cfb53995e3dd4dea947d2e81b876bf1e
+timeCreated: 1596617788
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/Cameras/Systems/Shots/ShotSystemOrbit.cs
+  uploadId: 637277

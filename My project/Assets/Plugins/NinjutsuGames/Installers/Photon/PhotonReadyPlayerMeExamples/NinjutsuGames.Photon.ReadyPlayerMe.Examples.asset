@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734bdb5c6ff542a7a94b0aec1b2782c, type: 3}
+  m_Name: NinjutsuGames.Photon.ReadyPlayerMe.Examples
+  m_EditorClassIdentifier: 
+  m_Install:
+    m_Name: Ready Player Me Examples
+    m_Module: Photon
+    m_Description: Ready player me examples
+    m_Author: Ninjutsu Games
+    m_Version:
+      major: 1
+      minor: 1
+      patch: 2
+    m_Complexity: 0
+    m_Dependencies:
+    - m_ID: Photon.Core
+      m_MinVersion:
+        major: 1
+        minor: 3
+        patch: 4
+    - m_ID: GameCreator.Examples
+      m_MinVersion:
+        major: 1
+        minor: 9
+        patch: 25
+    - m_ID: GameCreator.Characters
+      m_MinVersion:
+        major: 1
+        minor: 7
+        patch: 22
+    - m_ID: GameCreator.Blockout
+      m_MinVersion:
+        major: 1
+        minor: 4
+        patch: 10

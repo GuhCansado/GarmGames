@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0a59676faf89486ab3bcfe19d299ac74
+timeCreated: 1678896780
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/VisualScripting/Instructions/Collection/Characters/Properties/InstructionCharacterPropertyId.cs
+  uploadId: 637277

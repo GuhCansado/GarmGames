@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: f487606eec964ccd9d0b640be745df35
+timeCreated: 1610279724
+AssetOrigin:
+  serializedVersion: 1
+  productId: 203069
+  packageName: Game Creator 2
+  packageVersion: 2.14.47
+  assetPath: Assets/Plugins/GameCreator/Packages/Core/Runtime/Characters/Properties/Get/Types/String/GetStringCharactersID.cs
+  uploadId: 637277
