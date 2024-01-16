@@ -1,0 +1,32 @@
+﻿#title-label{
+    -unity-font-style: bold;
+    margin-right: 14px;
+}
+
+#title .node-icon{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.node #selection-border,
+.node:checked #selection-border,
+.node:hover #selection-border,
+.node:hover:checked #selection-border
+{
+    border-color: #d5293d;
+    border-radius: 6px;
+    /*margin-bottom: 6px;*/
+}
+
+#title{
+    background-color: #8d131a;
+    height: 40px;
+}
+
+#BottomPortContainer{
+    position: absolute;
+    height: 40%;
+    align-items: flex-end;
+    margin-top: 3px;
+    top: 26px;
+}

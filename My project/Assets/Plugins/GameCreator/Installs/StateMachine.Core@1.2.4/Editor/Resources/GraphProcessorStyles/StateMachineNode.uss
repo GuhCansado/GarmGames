@@ -1,0 +1,39 @@
+﻿#title-label{
+    /*-unity-font-style: bold;*/
+    margin-right: 8px;
+    margin-left: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.node #selection-border,
+.node:checked #selection-border,
+.node:hover #selection-border,
+.node:hover:checked #selection-border
+{
+    border-color: #8d37de;
+    border-radius: 6px;
+}
+
+#title{
+    background-color: #571a91;
+}
+
+#contents > #top > #input, #contents > #top > #output
+{
+    background-color: rgba(69, 42, 167, 0);
+    /*margin-left: 36px;*/
+    margin-top: -14px;
+}
+
+#top{
+    margin-top: -14px;
+}
+
+#title .node-icon{
+    margin-top: 8px;
+    margin-left: 6px;
+    width: 20px;
+}

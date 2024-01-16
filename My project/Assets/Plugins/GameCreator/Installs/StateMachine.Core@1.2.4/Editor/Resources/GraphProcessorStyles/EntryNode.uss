@@ -1,0 +1,54 @@
+﻿
+
+#title-label{
+    -unity-font-style: bold;
+    margin-right: 16px;
+    margin-left: 2px;
+    /*opacity: 0.8;*/
+}
+
+/*#title{
+    background-image: resource("Textures/boolean/AND");
+    -unity-background-image-tint-color: rgba(114, 64, 253, 0.43);
+    -unity-background-scale-mode: scale-to-fit;
+}*/
+
+.node #selection-border,
+.node:checked #selection-border,
+.node:hover #selection-border,
+.node:hover:checked #selection-border
+{
+    border-color: #7340ff;
+    border-radius: 6px;
+}
+
+#title{
+    background-color: #452aa7;
+}
+
+#connector{
+    background-color: #452aa7;
+}
+#contents > #top > #input, #contents > #top > #output
+{
+    background-color: rgba(69, 42, 167, 0);
+    /*margin-left: 36px;*/
+    margin-top: -14px;
+    align-content: flex-start;
+    align-items: flex-end;
+}
+
+#contents > #top > #output .port
+{
+    width: 20px;
+}
+
+#top{
+    margin-top: -14px;
+}
+
+#title .node-icon{
+    margin-top: 6px;
+    margin-left: 6px;
+    opacity: 0.5;
+}

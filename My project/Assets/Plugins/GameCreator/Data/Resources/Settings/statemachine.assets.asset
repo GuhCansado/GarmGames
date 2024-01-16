@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f4ef1958184c609a4361fc61b686ca, type: 3}
+  m_Name: statemachine.assets
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 137905507001958489
+  references:
+    version: 2
+    RefIds:
+    - rid: 137905507001958489
+      type: {class: StateMachineRepository, ns: NinjutsuGames.StateMachine.Runtime, asm: NinjutsuGames.StateMachine.Runtime}
+      data:
+        m_StateMachineAssets:
+          m_StateMachineAssets:
+          - {fileID: 11400000, guid: 4442f56291b53c4479e48a8b4b4b3350, type: 2}
+          - {fileID: 11400000, guid: 33a409db0cf78f1408e6033d85f3d45d, type: 2}
+          - {fileID: 11400000, guid: 73ed46017e9e64b7e8eeab1c3a73fedf, type: 2}
+          - {fileID: 11400000, guid: 33700984eb6c04fb2b8ac484ed3ebedb, type: 2}
+          - {fileID: 11400000, guid: e4f5b750b29b54db68590e4cf176f4c7, type: 2}
+          - {fileID: 11400000, guid: 2d38d502adffc48ce9c942e518b39637, type: 2}
+          - {fileID: 11400000, guid: 4f4032dcb86084799a38bfe80480560c, type: 2}
+          - {fileID: 11400000, guid: 3b4fdef9311804fd5b802ed6fc488c74, type: 2}
+          - {fileID: 11400000, guid: 459a713ac061e4c9e84e827cd10d888e, type: 2}
+          - {fileID: 11400000, guid: ceadceb7523d0438d83978f41cb16a4e, type: 2}

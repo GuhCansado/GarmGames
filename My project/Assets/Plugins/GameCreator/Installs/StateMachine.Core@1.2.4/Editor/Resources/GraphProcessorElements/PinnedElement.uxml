@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="content" picking-mode="Ignore">
+        <ui:VisualElement name="header" picking-mode="Ignore">
+            <ui:VisualElement name="labelContainer" picking-mode="Ignore">
+                <ui:Label name="titleLabel" style="-unity-background-image-tint-color: rgba(255, 0, 0, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contentContainer" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

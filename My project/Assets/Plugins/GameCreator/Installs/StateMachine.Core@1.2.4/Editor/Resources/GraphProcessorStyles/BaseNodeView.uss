@@ -1,0 +1,494 @@
+#node {
+    background-color: rgba(0, 63, 63, 0.8);
+}
+
+#controls {
+    background-color: rgba(63, 63, 63, 0.8);
+}
+
+#settings-button {
+    border-width: 0px;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(63, 63, 63, 0);
+    border-radius: 0px;
+}
+
+#settings-button > #icon {
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: resource("Icons/SettingsIcons");
+    flex-grow: 1;
+}
+
+#settings-button:hover {
+    background-color: rgba(127, 127, 127 0.2);
+}
+
+#contents #top .executed #connector, #contents #top .executed #connector #cap,
+#contents #top .executes #connector, #contents #top .executes #connector #cap,
+#contents #top .executeAfter #connector, #contents #top .executeAfter #connector #cap,
+#contents #top .true #connector, #contents #top .true #connector #cap,
+#contents #top .false #connector, #contents #top .false #connector #cap,
+#contents #top .loopBody #connector, #contents #top .loopBody #connector #cap,
+#contents #top .loopCompleted #connector, #contents #top .loopCompleted #connector #cap {
+    border-radius: 0px;
+}
+
+.HighlightObject{
+    position: absolute;
+    width: 93%;
+    height: 96%;
+    top: 1px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 7px;
+    border-color: aqua;
+    border-width: 3px;
+    scale: 1 1;
+    opacity: 0;
+}
+.HighlightTrigger{
+    position: absolute;
+    width: 93%;
+    height: 96%;
+    top: 1px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 7px;
+    border-color: gold;
+    border-width: 3px;
+    scale: 1 1;
+    opacity: 0;
+}
+.HighlightSuccess{
+    position: absolute;
+    width: 93%;
+    height: 96%;
+    top: 1px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 7px;
+    border-color: chartreuse;
+    border-width: 3px;
+    scale: 1 1;
+    opacity: 1;
+}
+.HighlightFail{
+    position: absolute;
+    width: 93%;
+    height: 96%;
+    top: 1px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 7px;
+    border-color: tomato;
+    border-width: 3px;
+    scale: 1 1;
+    opacity: 1;
+}
+.Highlight {
+    scale: 1.05 1;
+    opacity: 1;
+    /*border-width: 3px;*/
+    
+    /*background-color: rgba(0, 255, 0, 0.47);*/
+    
+    /*transition: opacity 0.1s ease-in-out, scale 0.1s ease-in-out;*/
+    /*transition: border-width 0.1s ease-in-out;*/
+    /*transition: scale 0.1s ease-in-out;*/
+}
+
+.UnHighlight {
+    scale: 1.15 1.2;
+    opacity: 0;
+    /*border-radius: 10px;*/
+    /*border-color: rgba(0, 0, 0, 0);*/
+    /*border-width: 0px;*/
+    /*transition-delay: 0.1s;*/
+    transition: opacity 0.3s ease-in-out, scale 0.3s ease-in-out;
+    /*transition: border-width 0.5s ease-in-out;*/
+    /*transition: scale 0.5s ease-in-out;*/
+}
+
+.HighlightMain {
+    scale: 1.1 1.1;
+    /*transition: scale 0.1s ease-in-out;*/
+}
+
+.UnHighlightMain {
+    scale: 1 1;
+    transition-delay: 0.1s;
+    transition: scale 0.3s ease-in-out;
+}
+
+/*
+.HighlightTitle, #selection-border.HighlightTitle{
+    !*scale: 1.1 1.1;*!
+    border-color: chartreuse;
+    border-width: 3px;
+    
+    !*border-radius: 10px;*!
+    !*padding: 5px;*!
+    transition: border-width 0.1s ease-in-out;
+    transition: border-color 0.1s ease-in-out;
+}
+
+.UnHighlightTitle, #selection-border.UnHighlightTitle{
+    !*scale: 1 1;*!
+    !*border-radius: 10px;*!
+    border-color: #191919;
+    border-width: 1px;
+    !*padding: 5px;*!
+    !*background-color: rgba(0, 0, 0, 0);*!
+    transition: border-width 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+}
+*/
+
+ParameterNodeView #title {
+    height: 16px;
+}
+
+ParameterNodeView #title.input {
+    flex-direction: row-reverse;
+}
+
+ParameterNodeView #node-border {
+    border-radius: 10px;
+}
+
+ParameterNodeView #selection-border {
+    border-radius: 12px;
+}
+
+ParameterNodeView #title > Label {
+    margin-left: 2px;
+    font-size: 11px;
+}
+
+ParameterNodeView #title #top PortView {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 2px;
+}
+
+ParameterNodeView PortView > Label {
+    visibility: hidden;
+    width: 0;
+}
+
+ParameterNodeView #controls EnumField {
+    margin: 0;
+}
+
+ParameterNodeView #controls EnumField > VisualElement {
+    border-width: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 14px;
+}
+
+ParameterNodeView #controls EnumField > VisualElement > TextElement {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+ParameterNodeView #controls EnumField > VisualElement > VisualElement {
+    margin-right: -2px;
+}
+
+#RightTitleContainer {
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#input-container {
+    position: absolute;
+    right: 100%;
+    top: 45px;
+    align-items: flex-end;
+    --layer: -50;
+}
+
+#input-container > .port-input-element > * {
+    min-width: 30px;
+    max-width: 200px;
+}
+
+#input-container > .port-input-element > PropertyField > ColorField,
+#input-container > .port-input-element > PropertyField > ObjectField,
+#input-container > .port-input-element > PropertyField > CurveField {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#input-container > .port-input-element > PropertyField > TextField {
+    min-width: 50px;
+}
+
+#input-container > .port-input-element > PropertyField > CurveField {
+    width: 100px;
+}
+
+#input-container > .port-input-element > PropertyField > Vector4Field Label,
+#input-container > .port-input-element > PropertyField > Vector3Field Label,
+#input-container > .port-input-element > PropertyField > Vector2Field Label,
+#input-container > .port-input-element > PropertyField > Vector3IntField Label,
+#input-container > .port-input-element > PropertyField > Vector2IntField Label {
+    font-size: 8px;
+    min-width: 8px;
+    flex-basis: 8px;
+    padding-top: 2px;
+    margin-right: 1px;
+    max-height: 150px;
+}
+
+#input-container > .port-input-element > PropertyField > Vector4Field FloatInput,
+#input-container > .port-input-element > PropertyField > Vector3Field FloatInput,
+#input-container > .port-input-element > PropertyField > Vector2Field FloatInput,
+#input-container > .port-input-element > PropertyField > Vector3IntField IntegerInput,
+#input-container > .port-input-element > PropertyField > Vector2IntField IntegerInput {
+    min-width: 28px;
+}
+
+#input-container > .port-input-element > PropertyField > * .unity-composite-field__field-spacer {
+    flex-grow: 0.01;
+}
+
+#input-container ObjectFieldSelector {
+    width: 17px;
+    height: 15px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#input-container ObjectFieldDisplay > Label {
+    margin-top: 2px;
+}
+
+#input-container ObjectFieldDisplay > Image {
+    margin: 0;
+}
+
+#input-container > .port-input-element > PropertyField > ColorField {
+    width: 60px;
+}
+
+#input-container > .port-input-element > * {
+    margin-left: 2px;
+}
+
+#input-container > .port-input-element * {
+    font-size: 8px;
+}
+
+#input-container > .port-input-element {
+    max-width: 180px;
+    background-color: rgba(72, 72, 72, 0.6);
+    margin-top: 3px;
+    margin-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 19px;
+    overflow: hidden;
+    padding-right: 1px;
+}
+
+#input-container > .port-input-element.empty {
+    width: 0;
+    padding: 0;
+}
+
+.collapsed #input-container {
+    visibility: hidden;
+}
+
+#input-container {
+    opacity: 0.6;
+}
+
+.node:checked > #input-container {
+    opacity: 1;
+}
+
+#input-container > .port-input-element IntegerInput,
+#input-container > .port-input-element FloatInput,
+#input-container > .port-input-element TextInput {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    padding-bottom: 1px;
+    height: 15px;
+}
+
+#TopPortContainer, #BottomPortContainer
+{
+   align-self: center; 
+   flex-direction: row;
+}
+
+#TopPortContainer
+{
+    /*margin-bottom: -1px;*/
+    margin-top: -6px;
+    position: absolute;
+}
+
+#BottomPortContainer
+{
+    margin-top: -1px;
+}
+
+#title-button-container
+{
+    align-items: center;
+    align-content: center;
+}
+
+#collapse-button
+{
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+/* In Unity 2020.3, we need to manually hide labels of property fields with empty label */
+.DrawerField_2020_3 > * > Label
+{
+    display: none;
+}
+
+#title-label{
+    margin-right: 14px;
+}
+
+#title{
+    border-radius: 5px;
+}
+
+.node
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.node > #node-border
+{
+    border-radius: 6px;
+    overflow: visible;
+}
+
+.expanded > #node-border{
+    overflow: visible;
+}
+
+
+#contents > #top > #input, #contents > #top > #output
+{
+    padding: 0px;
+    margin: 0px;
+    height: 14px
+}
+
+#contents > #top > #input .connectorBox, #contents > #top > #output .connectorBox
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#contents > #top > #input .unity-label
+{
+    display: none;
+}
+
+.hideLabels .unity-label
+{
+    display: none;
+}
+
+.port .unity-label
+{
+    display: none;
+}
+
+#collapse-button
+{
+    display: none;
+}
+
+#title .node-icon{
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+/*#node-border {
+    overflow: visible;
+    border-width: 0;
+}
+#selection-border {
+    margin: 2px;
+    !*margin-bottom: 2px;*!
+    !*margin-right: 2.5px;*!
+    !*margin-top: 3px;*!
+    !*border-radius: 6px;*!
+    border-width: 1px;
+    !*border-color: #191919;*!
+}*/
+
+/*.node:checked #selection-border, .node:hover:checked #selection-border {
+    !*border-width: 2px;*!
+    !*margin: -2px;*!
+}*/
+
+/*#title {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}*/
+
+.counter {
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 16px;
+    margin-left: 0px;
+    margin-right: 6px;
+    margin-top: 10px;
+    opacity: 0.3;
+    height: 16px;
+    width: 16px;
+    -unity-text-align: middle-center;
+    font-size: 9px;
+}
+
+.node #LockIcon {
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    /*border-color: black;*/
+    /*border-width: 1px;*/
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    padding: 2px;
+    border-radius: 2px;
+}
+
+#contents > #top > #input{
+    border-bottom-left-radius: 5px;
+}
+
+#contents > #top > #output{
+    border-bottom-right-radius: 5px;
+}
+

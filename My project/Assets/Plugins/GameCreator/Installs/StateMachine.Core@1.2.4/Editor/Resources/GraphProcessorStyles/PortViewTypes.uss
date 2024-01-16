@@ -1,0 +1,78 @@
+.Port_Single {
+	--port-color: #2080FF;
+}
+
+.Port_Vector2 {
+	--port-color: #2070FF;
+}
+
+.Port_Vector3 {
+	--port-color: #2060FF;
+}
+
+.Port_Vector4 {
+	--port-color: #2050FF;
+}
+
+.Port_ConditionsPortOutSuccess {
+	--port-color: #80FF00;
+}
+
+.Port_ConditionsPort {
+	--port-color: #5ab69b;
+}
+
+.Port_ConditionsPortOutFail {
+	--port-color: #D6490A;
+}
+
+.Port_EntryPort {
+	--port-color: #7340FF;
+}
+
+.Port_StateMachinePort {
+	--port-color: #ab54ff;
+}
+
+
+
+.Port_TriggerPortOut {
+	--port-color: #FF2642;
+}
+
+.Port_TriggerPortIn{
+	--port-color: #D6490A;
+}
+
+.Port_BranchPortIn {
+	--port-color: #80FF80;
+}
+
+.Port_BranchPortOut {
+	--port-color: #80FF80;
+}
+
+.Port_Boolean {
+	--port-color: #30FFFF;
+}
+
+.Port_ActionPortIn {
+	--port-color: #2080FF;
+	/*--port-color: #2080FF;*/
+}
+
+.Port_ActionPortOut {
+	--port-color: #33BAFF;
+}
+
+.Port_ConditionalLink {
+	--port-color: #FFFF30;
+}
+
+.Port_AnimationCurve{
+	--port-color: #FF0080;
+}
+
+.Port_Gradient{
+	--port-color: #FF8000;
+}

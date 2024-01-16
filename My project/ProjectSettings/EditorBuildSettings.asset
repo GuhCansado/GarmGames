@@ -5,14 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/!Essentials/UIMain/MAINMENU.unity
     guid: c3fabff31ca690a44873603fd8db2e32
-  - enabled: 1
+  - enabled: 0
     path: Assets/!Essentials/UIMain/Logresgister.unity
     guid: 6fd04d220f90778468232d4405184c38
-  - enabled: 1
+  - enabled: 0
     path: Assets/!Essentials/UIMain/MainOptions.unity
     guid: 72ef8ce95524fda48a8f5b3ef9239315
+  - enabled: 1
+    path: Assets/!Essentials/Game/Obearco.unity
+    guid: 2f5994a5564897746aa53fe8d7b46d98
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

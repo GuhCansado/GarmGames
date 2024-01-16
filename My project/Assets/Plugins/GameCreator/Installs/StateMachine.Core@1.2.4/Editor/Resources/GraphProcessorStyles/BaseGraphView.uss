@@ -1,0 +1,44 @@
+#graphRootView {
+    /*background-color: rgb(16, 16, 16);*/
+    /*-unity-background-scale-mode: scale-and-crop;
+    -unity-slice-left: 1000000;
+    -unity-slice-top: 1000000;
+    -unity-slice-right: 1000000;
+    -unity-slice-bottom: 1000000;*/
+}
+
+.graphView GridBackground {
+    --grid-background-color: #282828;
+    --line-color: rgba(55, 55, 55, 0.2);
+    --thick-line-color: rgba(20, 20, 20, 0.4);
+    --spacing: 10;
+}
+
+#StateMachineInfo{
+    justify-content: flex-end;
+}
+
+#StateMachineInfo > .StateMachineTitle {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    -unity-font-style: bold;
+    align-content: flex-start;
+    align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+
+#StateMachineInfo > .StateMachinePath {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+    align-content: flex-start;
+    align-self: flex-start;
+    padding: 5px;
+    padding-left: 10px;
+}

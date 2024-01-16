@@ -1,0 +1,37 @@
+﻿#title-label{
+    /*-unity-font-style: bold;*/
+    margin-right: 6px;
+}
+
+#title .node-icon{
+    margin-left: 6px;
+    margin-bottom: 5px;
+}
+
+.node #selection-border,
+.node:checked #selection-border,
+.node:hover #selection-border,
+.node:hover:checked #selection-border
+{
+    border-color: #3094f1;
+    border-radius: 6px;
+    /*margin-top: 6px;*/
+}
+
+#title{
+    /*background-color: #0d68b7;*/
+    /*height: 40px;*/
+}
+
+/*
+.node:checked {
+    border-color: #7340ff;
+}*/
+
+#input {
+    border-top-left-radius: 5px;
+}
+
+#output {
+    border-top-right-radius: 5px;
+}
