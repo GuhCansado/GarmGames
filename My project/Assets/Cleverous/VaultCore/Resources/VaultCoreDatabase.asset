@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb67d17015aa4a838d19571c9c820401, type: 3}
   m_Name: VaultCoreDatabase
   m_EditorClassIdentifier: 
-  m_dataKeys: 7434020075340200763402007734020078340200793402007a3402007b3402007c3402007d3402007e3402007f340200803402008134020082340200833402008434020085340200863402008734020088340200893402008a3402008b3402008c340200
+  m_dataKeys: 000000007434020075340200763402007734020078340200793402007a3402007b3402007c3402007d3402007e3402007f340200803402008134020082340200833402008434020085340200863402008734020088340200893402008a3402008b3402008c340200
   m_dataVals:
+  - {fileID: 11400000, guid: 1f4ecfcec39a7a9408fd7df723aa8623, type: 2}
   - {fileID: 11400000, guid: 98401223827abd84f91afe1a13871610, type: 2}
   - {fileID: 11400000, guid: 815191c9906740b5a7fcd29bf9811b12, type: 2}
   - {fileID: 11400000, guid: 829397903ceb4bf4686dc38891c9d674, type: 2}
@@ -137,6 +138,7 @@ MonoBehaviour:
   - m_typeName: Cleverous.VaultSystem.DataEntity, Cleverous.VaultSystem, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     m_data:
+    - {fileID: 11400000, guid: 1f4ecfcec39a7a9408fd7df723aa8623, type: 2}
     - {fileID: 11400000, guid: 98401223827abd84f91afe1a13871610, type: 2}
     - {fileID: 11400000, guid: 815191c9906740b5a7fcd29bf9811b12, type: 2}
     - {fileID: 11400000, guid: 829397903ceb4bf4686dc38891c9d674, type: 2}
@@ -164,4 +166,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5aa7badc5b06407499dd59dbd0bb5902, type: 2}
   - m_typeName: Cleverous.VaultSystem.VaultCustomDataGroup, Cleverous.VaultSystem,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_data: []
+    m_data:
+    - {fileID: 11400000, guid: 1f4ecfcec39a7a9408fd7df723aa8623, type: 2}

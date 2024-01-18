@@ -25,10 +25,10 @@ namespace GameCreator.Runtime.Cameras
         [SerializeField] private InputPropertyValueVector2 m_InputOrbit = InputValueVector2MotionSecondary.Create();
 
         [SerializeField]
-        private PropertyGetDecimal m_InputSensitivityX = GetDecimalDecimal.Create(180f);
+        private PropertyGetDecimal m_SensitivityX = GetDecimalDecimal.Create(5f);
         
         [SerializeField]
-        private PropertyGetDecimal m_InputSensitivityY = GetDecimalDecimal.Create(180f);
+        private PropertyGetDecimal m_SensitivityY = GetDecimalDecimal.Create(5f);
 
         [SerializeField, Range(1f, 179f)] private float m_MaxPitch = 60f;
         [SerializeField] private float m_MaxRadius = 5f;
@@ -101,8 +101,8 @@ namespace GameCreator.Runtime.Cameras
         {
             set
             {
-                this.m_InputSensitivityX = new PropertyGetDecimal(value.x);
-                this.m_InputSensitivityY = new PropertyGetDecimal(value.y);
+                this.m_SensitivityX = new PropertyGetDecimal(value.x);
+                this.m_SensitivityY = new PropertyGetDecimal(value.y);
             }
         }
 
@@ -169,13 +169,13 @@ namespace GameCreator.Runtime.Cameras
             {
                 Vector2 deltaInput = this.m_InputOrbit.Read();
 
-                float sensitivityX = (float) this.m_InputSensitivityX.Get(shotType.Args);
-                float sensitivityY = (float) this.m_InputSensitivityY.Get(shotType.Args);
+                float sensitivityX = (float) this.m_SensitivityX.Get(shotType.Args);
+                float sensitivityY = (float) this.m_SensitivityY.Get(shotType.Args);
 
                 if (deltaInput == Vector2.zero) this.ComputeAlign(shotType);  
                 else this.ComputeInput(shotType, new Vector2(
-                    deltaInput.x * shotType.ShotCamera.TimeMode.DeltaTime * sensitivityX, 
-                    deltaInput.y * shotType.ShotCamera.TimeMode.DeltaTime * sensitivityY
+                    deltaInput.x * sensitivityX, 
+                    deltaInput.y * sensitivityY
                 ));
             }
 

@@ -21,7 +21,7 @@ MonoBehaviour:
       type: {class: PhotonRepository, ns: NinjutsuGames.Photon.Runtime, asm: NinjutsuGames.Photon.Runtime}
       data:
         settings:
-          monobehaviourCache: 0
+          monobehaviourCache: 1
           sendRate: 30
           sendRateOnSerialize: 10
           unreliableCommandsLimit: 10

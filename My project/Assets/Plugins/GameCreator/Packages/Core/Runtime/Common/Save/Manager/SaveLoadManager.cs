@@ -156,8 +156,9 @@ namespace GameCreator.Runtime.Common
         public static void Unsubscribe(IGameSave reference)
         {
             if (ApplicationManager.IsExiting) return;
-            
             Instance.m_Subscriptions.Remove(reference.SaveID);
+            
+            if (Instance.IsLoading) return;
             Instance.m_Values[reference.SaveID] = new Value
             {
                 value = reference.GetSaveData(false),

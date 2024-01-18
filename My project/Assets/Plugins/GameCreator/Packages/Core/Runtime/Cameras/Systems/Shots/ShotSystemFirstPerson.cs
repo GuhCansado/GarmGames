@@ -21,10 +21,10 @@ namespace GameCreator.Runtime.Cameras
         private InputPropertyValueVector2 m_InputRotate = InputValueVector2MotionSecondary.Create();
         
         [SerializeField]
-        private PropertyGetDecimal m_InputSensitivityX = GetDecimalDecimal.Create(180f);
+        private PropertyGetDecimal m_SensitivityX = GetDecimalDecimal.Create(5f);
         
         [SerializeField]
-        private PropertyGetDecimal m_InputSensitivityY = GetDecimalDecimal.Create(180f);
+        private PropertyGetDecimal m_SensitivityY = GetDecimalDecimal.Create(5f);
 
         [SerializeField, Range(1f, 179f)] private float m_MaxPitch = 60f;
         [SerializeField] private float m_SmoothTime = 0.1f;
@@ -47,8 +47,8 @@ namespace GameCreator.Runtime.Cameras
         {
             set
             {
-                this.m_InputSensitivityX = new PropertyGetDecimal(value.x);
-                this.m_InputSensitivityY = new PropertyGetDecimal(value.y);
+                this.m_SensitivityX = new PropertyGetDecimal(value.x);
+                this.m_SensitivityY = new PropertyGetDecimal(value.y);
             }
         }
         
@@ -125,14 +125,14 @@ namespace GameCreator.Runtime.Cameras
 
             if (shotType.IsActive)
             {
-                double sensitivityX = this.m_InputSensitivityX.Get(shotType.Args);
-                double sensitivityY = this.m_InputSensitivityY.Get(shotType.Args);
+                double sensitivityX = this.m_SensitivityX.Get(shotType.Args);
+                double sensitivityY = this.m_SensitivityY.Get(shotType.Args);
                 
                 Vector2 deltaInput = this.m_InputRotate.Read();
                 
                 this.ComputeInput(new Vector2(
-                    deltaInput.x * shotType.ShotCamera.TimeMode.DeltaTime * (float) sensitivityX,
-                    deltaInput.y * shotType.ShotCamera.TimeMode.DeltaTime * (float) sensitivityY
+                    deltaInput.x * (float) sensitivityX,
+                    deltaInput.y * (float) sensitivityY
                 ));
             }
 

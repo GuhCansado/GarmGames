@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3941907541905721446, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
+      propertyPath: managedReferences[5243232769837892272].m_Jump.m_AirJumps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4860135314797049899, guid: 71dbe073e734d46b4a8ba59113d8a709, type: 3}
       propertyPath: smoothTime
       value: 0.25

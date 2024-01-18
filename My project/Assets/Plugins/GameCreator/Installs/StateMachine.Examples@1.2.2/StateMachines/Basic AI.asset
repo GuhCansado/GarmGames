@@ -90,8 +90,8 @@ MonoBehaviour:
       using this State Machine will try to attack the player when its inside the
       collider radius. \nWill stop and go back to patrol once player exits the trigger."
   nodeInspectorReference: {fileID: 0}
-  position: {x: -100, y: 119, z: 0}
-  scale: {x: 0.7561437, y: 0.7561437, z: 1}
+  position: {x: 145, y: 207, z: 0}
+  scale: {x: 0.32690176, y: 0.32690176, z: 1}
   references:
     version: 2
     RefIds:

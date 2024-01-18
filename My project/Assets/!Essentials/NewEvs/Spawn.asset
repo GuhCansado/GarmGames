@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed88b47b9f8014a8587d7712e17957cc, type: 3}
+  m_Name: Spawn
+  m_EditorClassIdentifier: 
+  m_SaveUniqueID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: 67ed56f8-d945-4ce7-a07e-570f096591df
+  m_NameList:
+    rid: 137905554453168209
+  nodes:
+  - rid: 137905554453168212
+  - rid: 137905554453168213
+  edges:
+  - GUID: 84499386-7856-4320-b0b7-ba137938aedd
+    owner: {fileID: 11400000}
+    inputNodeGUID: 87b10a5c-7f41-4002-83ee-ab33a2a9ff52
+    outputNodeGUID: ae132650-0212-418d-8331-7baab7a1afc5
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  networkNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -83, y: 19, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 137905554453168209
+      type: {class: NameList, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Source: []
+    - rid: 137905554453168212
+      type: {class: StartNode, ns: NinjutsuGames.StateMachine.Runtime, asm: NinjutsuGames.StateMachine.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: ae132650-0212-418d-8331-7baab7a1afc5
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 100
+          y: 300
+          width: 100
+          height: 100
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        enabledForExecution: 1
+        instructions:
+          m_Instructions: []
+    - rid: 137905554453168213
+      type: {class: ActionsNode, ns: NinjutsuGames.StateMachine.Runtime, asm: NinjutsuGames.StateMachine.Runtime}
+      data:
+        nodeCustomName: 
+        GUID: 87b10a5c-7f41-4002-83ee-ab33a2a9ff52
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 233
+          y: 272
+          width: 111
+          height: 54
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        enabledForExecution: 1
+        instructions:
+          m_Instructions: []
+        networkingSettings:
+          rid: -2

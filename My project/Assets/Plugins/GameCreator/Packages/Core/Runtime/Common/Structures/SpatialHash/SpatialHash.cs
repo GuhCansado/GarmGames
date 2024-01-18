@@ -156,7 +156,7 @@ namespace GameCreator.Runtime.Common
                 Bounds[2] = new float3(point.x - radius, point.y - radius, point.z - radius);
                 Bounds[3] = new float3(point.x - radius, point.y - radius, point.z + radius);
             
-                this.GetCandidates(MAX_DIMENSION, point, except?.UniqueCode ?? 0);
+                this.GetCandidates(MAX_DIMENSION, point, radius, except?.UniqueCode ?? 0);
             }
             
             this.m_Candidates.Sort();
@@ -175,7 +175,7 @@ namespace GameCreator.Runtime.Common
         
         // PRIVATE METHODS: -----------------------------------------------------------------------
         
-        private void GetCandidates(int dimension, float3 point, int exceptUniqueCode)
+        private void GetCandidates(int dimension, float3 point, float radius, int exceptUniqueCode)
         {
             int3 cellA = HashKey.Hash(dimension, Bounds[0]); // (-1,  1,  1)
             int3 cellB = HashKey.Hash(dimension, Bounds[1]); // ( 1,  1,  1)
@@ -204,13 +204,14 @@ namespace GameCreator.Runtime.Common
 
                                 float3 instancePosition = this.m_Records[uniqueCode].Position;
                                 float distance = math.distance(instancePosition, point);
+                                if (distance > radius) continue;
                                 
                                 m_Candidates.Add(new Candidate(uniqueCode, distance));
                             }
                         }
                         else
                         {
-                            this.GetCandidates(dimension >> 1, point, exceptUniqueCode);
+                            this.GetCandidates(dimension >> 1, point, radius, exceptUniqueCode);
                         }
                     }
                 }

@@ -74,6 +74,15 @@ namespace GameCreator.Runtime.Characters
             this.m_LastVerticalSpeed = 0f;
             this.m_LastMovementSpeed = 0;
         }
+        
+        public override void OnEnable()
+        {
+            if (this.Character != null)
+            {
+                this.m_GroundTime = this.Character.Time.Time;
+                this.m_GroundFrame = this.Character.Time.Frame;   
+            }
+        }
 
         public override void OnStartup(Character character)
         {

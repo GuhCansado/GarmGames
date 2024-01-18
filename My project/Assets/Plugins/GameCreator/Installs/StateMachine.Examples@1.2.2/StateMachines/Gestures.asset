@@ -49,8 +49,8 @@ MonoBehaviour:
     title: Gestures Demo
     content: Press Space bar to make the character play a gesture animation.
   nodeInspectorReference: {fileID: 0}
-  position: {x: -22.5, y: -140, z: 0}
-  scale: {x: 1, y: 1, z: 1}
+  position: {x: 29, y: -55, z: 0}
+  scale: {x: 0.7561437, y: 0.7561437, z: 1}
   references:
     version: 2
     RefIds:

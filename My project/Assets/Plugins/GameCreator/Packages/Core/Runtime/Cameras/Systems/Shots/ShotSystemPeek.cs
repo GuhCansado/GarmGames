@@ -23,10 +23,10 @@ namespace GameCreator.Runtime.Cameras
         [SerializeField] private bool m_Restitute;
         
         [SerializeField] 
-        private PropertyGetDecimal m_InputSpeedX = GetDecimalDecimal.Create(60f);
+        private PropertyGetDecimal m_SensitivityX = GetDecimalDecimal.Create(60f);
         
         [SerializeField]
-        private PropertyGetDecimal m_InputSpeedY = GetDecimalDecimal.Create(60f);
+        private PropertyGetDecimal m_SensitivityY = GetDecimalDecimal.Create(60f);
 
         // MEMBERS: -------------------------------------------------------------------------------
         
@@ -68,12 +68,12 @@ namespace GameCreator.Runtime.Cameras
                     break;
                     
                 case false:
-                    float speedX = (float) this.m_InputSpeedX.Get(shotType.Args);
-                    float speedY = (float) this.m_InputSpeedY.Get(shotType.Args);
+                    float sensitivityX = (float) this.m_SensitivityX.Get(shotType.Args);
+                    float sensitivityY = (float) this.m_SensitivityY.Get(shotType.Args);
                     
                     this.m_Value.Target += new Vector3(
-                        input.x * shotType.ShotCamera.TimeMode.DeltaTime * speedX,
-                        input.y * shotType.ShotCamera.TimeMode.DeltaTime * speedY,
+                        input.x * sensitivityX,
+                        input.y * sensitivityY,
                         0f
                     );
                     break;
