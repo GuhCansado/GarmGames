@@ -4966,11 +4966,11 @@ MonoBehaviour:
     - rid: 5243232770371354628
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 180
+        m_Value: 5
     - rid: 5243232770371354629
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 180
+        m_Value: 5
     - rid: 5243232770371354630
       type: {class: GetGameObjectTarget, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
