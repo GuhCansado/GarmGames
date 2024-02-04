@@ -4127,6 +4127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 808509388}
+  - component: {fileID: 808509389}
   m_Layer: 0
   m_Name: open
   m_TagString: Untagged
@@ -4150,6 +4151,41 @@ Transform:
   - {fileID: 1439309124}
   m_Father: {fileID: 1481753321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808509389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808509387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 8440051430586581142
+  m_TriggerEvent:
+    rid: 8440051430586581141
+  references:
+    version: 2
+    RefIds:
+    - rid: 8440051430586581141
+      type: {class: EventOnStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 8440051430586581142
+      type: {class: InstructionCursorVisibility, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsVisible:
+          m_Property:
+            rid: 8440051430586581143
+    - rid: 8440051430586581143
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
 --- !u!1001 &833770720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7182,6 +7218,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319436907}
   m_CullTransparentMesh: 1
+--- !u!1 &1328166248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328166249}
+  m_Layer: 0
+  m_Name: close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1328166249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328166248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1481753321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1331693979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3181123658199569678, guid: 50f68dd6a8fd58c49a4211f5fb1faea9, type: 3}
@@ -7706,11 +7773,12 @@ Transform:
   m_GameObject: {fileID: 1481753319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 203.82217, y: 33.691467, z: 289.8722}
+  m_LocalPosition: {x: 203.82217, y: 39.38, z: 289.8722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 808509388}
+  - {fileID: 1328166249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1481753322
@@ -7728,6 +7796,8 @@ MonoBehaviour:
   m_Instructions:
     m_Instructions:
     - rid: 137905855776161908
+    - rid: 8440051430586581110
+    - rid: 8440051430586581107
   m_TriggerEvent:
     rid: 137905855776161904
   references:
@@ -7765,6 +7835,30 @@ MonoBehaviour:
       type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_GameObject: {fileID: 808509387}
+    - rid: 8440051430586581107
+      type: {class: InstructionCursorVisibility, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsVisible:
+          m_Property:
+            rid: 8440051430586581108
+    - rid: 8440051430586581108
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 8440051430586581110
+      type: {class: InstructionGameObjectToggleActive, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 8440051430586581111
+    - rid: 8440051430586581111
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 1328166248}
 --- !u!1001 &1498475360
 PrefabInstance:
   m_ObjectHideFlags: 0
